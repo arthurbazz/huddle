@@ -1,0 +1,30 @@
+/*===== CSS RESET=====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===== CSSS VARIABLES===== */
+:root {
+    --font-size: 18px;
+    --header-background-image: url(./images/bg-hero-desktop.svg);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+}
+
+/*===== HUDDLE STYLES=====*/
+.header-container {
+    height: 100vh;
+    background-image: var(--header-background-image);
+}
+
+.main-container {
+    height: 200vh;
+}
+
+.footer-container {
+    height: 50vh;
+    background-color: var(--very-dark-cyan);
+}
