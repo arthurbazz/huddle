@@ -12,17 +12,106 @@
     --grayish-blue: hsl(208, 11%, 55%);
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-cyan: hsl(193, 100%, 96%);
+    --pink: hsl(322, 100%, 66%);
+    --display-flex: flex;
+    --flex-50: 50;
+    --nav-padding: 2rem 4rem;
+    --btn-padding: 0.8rem 4rem;
+    --cursor-pointer: pointer;
 }
 
 /*===== HUDDLE STYLES=====*/
+
+body {
+    font-size: var(--font-size);
+}
 .header-container {
     height: 100vh;
     background-image: var(--header-background-image);
+    margin-bottom: 180px;
 }
 
-.main-container {
-    height: 200vh;
+.navbar {
+    display: var(--display-flex);
+    justify-content: space-between;
+    padding: var(--nav-padding);
 }
+
+.nav-btn {
+    border-color: rgb(196, 248, 255);
+    border-radius: 9999px;
+    padding: var(--btn-padding);
+    background-color: hsl(0, 0%, 100%);
+    /* border: none; */
+}
+
+.nav-btn, .btn:hover {
+    cursor: var(--cursor-pointer);
+}
+
+.btn {
+    border-radius: 9999px;
+    padding: var(--btn-padding);
+    background-color: var(--pink);
+    border: none;
+    width: 45%;
+}
+
+.header-article {
+    display: var(--display-flex);
+    margin: 1rem 4rem;
+}
+
+.header-article > .header-content, .header-img {
+    flex: var(--flex-50);
+    height: 70vh;
+}
+
+.header-content {
+    display: var(--display-flex);
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding: 0 100px 20px 0;  
+}
+
+p {
+    padding: 0 80px 20px 0;
+}
+.main-container {
+    height: 300vh;
+}
+
+.main-container > .main-section {
+    border: 1px solid rgb(172, 171, 171);
+    height:80vh;
+    margin: 1.5em 4em;
+    display: flex;
+    border-radius: 10px;
+    background-color: #FAFDFF;
+    
+}
+
+.main-section > .main-div, .main-img {
+    /* border: 2px solid green; */
+    flex: var(--flex-50);
+    padding: 60px; 
+    
+}
+
+.main-div {
+    display: var(--display-flex);
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+/* .main-img {
+    padding: 60px;
+} */
 
 .footer-container {
     height: 50vh;
